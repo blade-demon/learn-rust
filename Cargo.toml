@@ -1,7 +1,8 @@
 [package]
-name = "world-hello"
+name = "hello-rust"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
 num = "0.4.0"
+ferris-says = "0.3.1"
