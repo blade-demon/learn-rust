@@ -1,5 +1,5 @@
 use ferris_says::say;
-use num::complex::Complex;
+// use num::complex::Complex;
 use std::io::{stdout, BufWriter};
 
 // fn main() {
@@ -173,15 +173,15 @@ fn main() {
     // let a = 13.54_f32.round();
     // println!("{}", a);
 
-    let c = 'z';
-    let z = 'ℤ';
-    let g = '国';
-    let heart_eyed_cat = '😻';
-    println!("字符'中'占用了{}字节的内存大小", std::mem::size_of_val(&g));
+    // let c = 'z';
+    // let z = 'ℤ';
+    // let g = '国';
+    // let heart_eyed_cat = '😻';
+    // println!("字符'中'占用了{}字节的内存大小", std::mem::size_of_val(&g));
 
     // demo
     let stdout = stdout();
-    let message = String::from("Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!Hello, World!");
+    let message = String::from("Hello, World!");
     let width = message.chars().count();
     let mut writer = BufWriter::new(stdout.lock());
     say(&message, width, &mut writer).unwrap();
